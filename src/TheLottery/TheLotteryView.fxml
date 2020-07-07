@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="287.0" prefWidth="320.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="TheLottery.TheLotteryViewController">
+    <children>
+        <Label fx:id="label" alignment="CENTER" layoutX="33.0" layoutY="14.5" minHeight="16" minWidth="69" prefHeight="44.0" prefWidth="256.0" text="THE LOTTERY"><font><Font size="33.0" /></font></Label>
+        <Label fx:id="label2" alignment="CENTER" layoutX="11.0" layoutY="73.0" minHeight="16" minWidth="69" prefHeight="16.0" prefWidth="300.0" text="Put 5 numbers between 1 and 90 as your bet!" />
+        <TextField fx:id="tfm1" alignment="CENTER" layoutX="14.0" layoutY="94.0" prefHeight="35.0" prefWidth="35.0" />
+        <TextField fx:id="tfm2" alignment="CENTER" layoutX="78.0" layoutY="94.0" prefHeight="35.0" prefWidth="35.0" />
+        <TextField fx:id="tfm3" alignment="CENTER" layoutX="143.0" layoutY="94.0" prefHeight="35.0" prefWidth="35.0" />
+        <TextField fx:id="tfm4" alignment="CENTER" layoutX="207.0" layoutY="94.0" prefHeight="35.0" prefWidth="35.0" />
+        <TextField fx:id="tfm5" alignment="CENTER" layoutX="271.0" layoutY="94.0" prefHeight="35.0" prefWidth="35.0" />
+        <Label fx:id="label3" alignment="CENTER" layoutX="11.0" layoutY="144.0" minHeight="16" minWidth="69" prefHeight="16.0" prefWidth="300.0" text="WINNING NUMBERS" visible="false" />
+        <TextField fx:id="tfr1" alignment="CENTER" editable="false" layoutX="14.0" layoutY="165.0" prefHeight="35.0" prefWidth="35.0" visible="false" />
+        <TextField fx:id="tfr2" alignment="CENTER" editable="false" layoutX="78.0" layoutY="165.0" prefHeight="35.0" prefWidth="35.0" visible="false" />
+        <TextField fx:id="tfr3" alignment="CENTER" editable="false" layoutX="143.0" layoutY="165.0" prefHeight="35.0" prefWidth="35.0" visible="false" />
+        <TextField fx:id="tfr4" alignment="CENTER" editable="false" layoutX="207.0" layoutY="165.0" prefHeight="35.0" prefWidth="35.0" visible="false" />
+        <TextField fx:id="tfr5" alignment="CENTER" editable="false" layoutX="271.0" layoutY="165.0" prefHeight="35.0" prefWidth="35.0" visible="false" />
+        <Label fx:id="label4" alignment="CENTER" layoutX="126.0" layoutY="210.0" minHeight="16" minWidth="69" />
+        <Button fx:id="button" alignment="CENTER" layoutX="130.0" layoutY="236.0" onAction="#handleButtonAction" prefHeight="35.0" prefWidth="62.0" text="GO!" />
+        <Pane fx:id="errorPane" layoutX="60.0" layoutY="137.0" prefHeight="91.0" prefWidth="200.0" visible="false">
+            <children>
+                <Rectangle fx:id="rectangle" arcHeight="10.0" arcWidth="10.0" fill="#e6e6e6" height="91.0" stroke="RED" strokeType="INSIDE" width="200.0" />
+                <Label fx:id="label5" alignment="CENTER" layoutX="69.0" layoutY="7.0" prefHeight="17.0" prefWidth="62.0" text="ERROR!" textFill="RED" />
+                <Label fx:id="label6" layoutX="10.0" layoutY="27.0" prefHeight="17.0" prefWidth="100.0" />
+                <HBox fx:id="hBox1" layoutX="110.0" layoutY="26.0" visible="false">
+                    <children>
+                        <Label fx:id="dot01" alignment="CENTER" layoutX="122.0" layoutY="28.0" prefHeight="17.0" prefWidth="17.0" />
+                        <Label fx:id="dot02" alignment="CENTER" layoutX="136.0" layoutY="28.0" prefHeight="17.0" prefWidth="17.0" />
+                        <Label fx:id="dot03" alignment="CENTER" layoutX="145.0" layoutY="27.0" prefHeight="17.0" prefWidth="17.0" />
+                        <Label fx:id="dot04" alignment="CENTER" layoutX="152.0" layoutY="29.0" prefHeight="17.0" prefWidth="17.0" />
+                        <Label fx:id="dot05" alignment="CENTER" layoutX="168.0" layoutY="28.0" prefHeight="17.0" prefWidth="17.0" />
+                    </children>
+                </HBox>
+                <Label fx:id="label7" layoutX="10.0" layoutY="47.0" prefHeight="17.0" prefWidth="100.0" />
+                <HBox fx:id="hBox2" layoutX="110.0" layoutY="46.0" visible="false">
+                    <children>
+                        <Label fx:id="dot06" alignment="CENTER" layoutX="26.0" layoutY="-64.0" prefHeight="17.0" prefWidth="17.0" />
+                        <Label fx:id="dot07" alignment="CENTER" layoutX="51.0" layoutY="-62.0" prefHeight="17.0" prefWidth="17.0" />
+                        <Label fx:id="dot08" alignment="CENTER" layoutX="78.0" layoutY="-62.0" prefHeight="17.0" prefWidth="17.0" />
+                        <Label fx:id="dot09" alignment="CENTER" layoutX="105.0" layoutY="-64.0" prefHeight="17.0" prefWidth="17.0" />
+                        <Label fx:id="dot10" alignment="CENTER" layoutX="133.0" layoutY="-62.0" prefHeight="17.0" prefWidth="17.0" />
+                    </children>
+                </HBox>
+                <Label fx:id="label8" alignment="CENTER" layoutX="47.0" layoutY="67.0" prefHeight="17.0" prefWidth="106.0" text="DUPLICATION!" textFill="RED" visible="false" />
+            </children>
+        </Pane>
+    </children>
+</AnchorPane>
